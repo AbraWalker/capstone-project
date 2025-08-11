@@ -1,0 +1,9 @@
+{% extends 'base.html %}
+{% block content %}
+{% load static %}
+
+<h2>{{ post.game_title }} | {{ post.rating }}</h2>
+<h3>{{ post.author }}</h3>
+<p> {{post.content}} </p>
+
+{% endblock content %}
