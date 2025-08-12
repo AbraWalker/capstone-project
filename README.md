@@ -5,7 +5,7 @@ Capstone Assignment
 
 My submission for my capstone project is PLAYed, a short-form review site that uses Python, HTML, and CSS and various frameworks like Django and Bootstrap.
 
-The live version of this project can be found <a href="" target="blank">here.</a>
+The live version of this project can be found <a href="https://played-capstone-project-6a17dbaa5b68.herokuapp.com/" target="blank">here.</a>
 
 ## CONTENTS
 - [User Stories](#USER-STORIES)
@@ -22,7 +22,7 @@ The live version of this project can be found <a href="" target="blank">here.</a
 - [Sources and References](#SOURCE)
 
 ## USER STORIES
-The user stories for this project are further explored in the project's <a href="" target="blank">kanban board.</a>
+The user stories for this project are further explored in the project's <a href="https://github.com/users/AbraWalker/projects/11" target="blank">kanban board.</a>
 
 -As a site user, I want to log in to submit my own reviews and interact with others’ reviews.
 -As the site owner, I want to impose a character limit on every review, so users have to be concise.
@@ -36,13 +36,14 @@ Taking these user stories into account, I wanted a site that was stylish and sui
 It was important that the site did not look affiliated with other gaming companies, review sites or gaming platforms.
 
 ### COLOURS
-The basic colour scheme I chose for my site is:
-#4F000B
-#720026
-#CE4257
-#FF7F51
-#FF9B54
+The basic colour scheme I chose for my site is: </br>
+`#4F000B` </br>
+`#720026` </br>
+`#CE4257` </br>
+`#FF7F51` </br>
+`#FF9B54` </br>
 I decided the colours need to be bright, though not too similar to existing game-platform colour schemes. As these platforms tend to use dark blues/greens, I focused on warmer colours.
+The palette can be viewed <a href="https://coolors.co/4f000b-720026-ce4257-ff7f51-ff9b54" target="blank">on Coolors</a>.
 
 ### FONTS
 Due to the subject of the content, I chose fonts that were easy to read, and had a slight computerised theme.
@@ -73,7 +74,8 @@ Site Hosting: Heroku
 
 ## TESTING
 
-Python 3.9 for site previews during development.
+HTML Validation
+CSS Validation
 
 ## IMPROVEMENTS
 
