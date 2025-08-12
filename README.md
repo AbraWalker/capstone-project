@@ -57,6 +57,12 @@ Playstation - Photo by Garrett Morrow: https://www.pexels.com/photo/black-dualsh
 Mortal Kombat - Photo by cottonbro studio: https://www.pexels.com/photo/couple-love-sitting-evening-4009604/ </br>
 Pokemon - Photo by Anton: https://www.pexels.com/photo/turned-on-iphone-displaying-pokemon-go-charizard-application-243698/ </br>
 
+## WIREFRAMES
+
+Home Page: </br>
+![Landing/Home Page](readme images/landing page.png)
+![Below First Landing Image](readme images/landing page.png)
+
 ## FEATURES
 ### Navigation Bar
 ### User Authentication
