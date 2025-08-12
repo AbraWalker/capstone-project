@@ -60,8 +60,8 @@ Pokemon - Photo by Anton: https://www.pexels.com/photo/turned-on-iphone-displayi
 ## WIREFRAMES
 
 Home Page: </br>
-![Landing/Home Page](readme images/landing page.png)
-![Below First Landing Image](readme images/landing page.png)
+![Home Page](wireframes/home.png)
+![Home Page](wireframes/home2.png)
 
 ## FEATURES
 ### Navigation Bar
