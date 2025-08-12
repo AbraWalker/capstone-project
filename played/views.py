@@ -9,4 +9,4 @@ class ReviewList(generic.ListView):
 def review_details(request, slug):
     queryset = Post.objects.all()
     post = get_object_or_404(queryset, slug=slug)
-    return render(request, "played/review_list.html", {"review": post},)
+    return render(request, "reviews_list.html", {"post": post},)

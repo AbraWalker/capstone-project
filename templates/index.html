@@ -57,8 +57,10 @@
 <section id="preview">
     <div class="row">
     <h2>Recent Reviews</h2>
-    <h3>{{ post.game_title }} | {{ post.rating }}</h3>
-    <p>{{ post.content }}</p>
+    {% for review in review_list %}
+    <h3>{{ review.game_title }} | {{ review.rating }}</h3>
+    <p>{{ review.content }}</p>
+    {% endfor %}
     </div>
 </section>
 {% endblock %}

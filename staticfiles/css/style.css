@@ -42,6 +42,10 @@ body {
     color: var(--white);
 }
 
+.user-greeting {
+    color: var(--text-color)!important;
+}
+
 .active {
     color: var(--text-highlight-color) !important;
     transition: 0.3s;
