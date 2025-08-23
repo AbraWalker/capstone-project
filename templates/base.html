@@ -1,8 +1,10 @@
 {% load static %}
-{% url 'home' as home_url %}
+{% url 'home' as home_view %}
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
+{% url 'guidelines' as guidelines_view %}
+<!-- {% url 'reviews' as review_details %} -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,8 +27,8 @@
 
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-custom">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">PLAYed</a>
+        <div class="container-fluid d-flex justify-content-between align-items-right">
+            <a class="navbar-brand" href="{% url 'home' %}">PLAYed</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -44,9 +46,6 @@
                         <a class="nav-link" href="#">Guides</a>
                     </li>
                     {% if user.is_authenticated %}
-                    <li class="nav-item user-greeting">
-                        Hey, {{ user }}!
-                    </li>
                     <li class="nav-item">
                     <a class="nav-link {% if request.path == logout_url %}active{% endif %}" aria-current="page"
                         href="{% url 'account_logout' %}">Logout</a>
@@ -62,8 +61,15 @@
                 </li>
                 {% endif %}
                 </ul>
+                <div class="navbar-center d-flex justify-content-center">
+                    {% if user.is_authenticated %}
+                    <span class="user-greeting">
+                        Hey {{ user }}!
+                    </span>
+                    {% endif %}
+                </div>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <input class="form-control me-2" type="search" placeholder="Find your favourites!" aria-label="Search" />
                     <button class="btn btn-outline-warning" type="submit">Search</button>
                 </form>
             </div>
@@ -74,8 +80,8 @@
         <!--Page Content-->
         {% endblock content %}
     </main>
-    <footer id="footer" class="mt-auto">
-        <p class="mt-auto text-center"><a href="#">Community Guidelines</a> | Made by AbraWalker</p>
+    <footer id="footer">
+        <p class="text-center"><a href="{% url 'guidelines' %}">Community Guidelines</a> | Made by AbraWalker</p>
     </footer>
     <!--Bootstrap Script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"

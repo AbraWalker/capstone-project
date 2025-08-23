@@ -12,8 +12,16 @@ def review_details(request, slug):
     post = get_object_or_404(queryset, slug=slug)
     review_form = ReviewForm()
     return render(
-        request, "reviews/reviews_list.html", 
+        request, "reviews_list.html", 
         {"post": post,
          "review_form": review_form
         },
         )
+
+def home_view(request):
+    #renders homepage
+    return render(request, 'index.html')
+
+def guidelines_view(request):
+    #renders guidelines
+    return render(request, 'guidelines.html')
