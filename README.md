@@ -24,14 +24,14 @@ The live version of this project can be found <a href="https://played-capstone-p
 ## USER STORIES
 The user stories for this project are further explored in the project's <a href="https://github.com/users/AbraWalker/projects/11" target="blank">kanban board.</a>
 
--As a site user, I want to log in to submit my own reviews and interact with others’ reviews.
--As the site owner, I want to impose a character limit on every review, so users have to be concise.
--As a user, I want to be able to find reviews for games I care about.
--As an administrator, I want users to be able to delete their posts, but not edit them, so posts cannot be manipulated.
--As a site user, I don’t want to see content that is irrelevant, offensive, etc..
--As a site user, I want to track the games I have played.
--As a site user, I want to upload guides for other users to read.
--As a site user, I want the site to be easy to view on all devices.
+-As a site user, I want to log in to submit my own reviews and interact with others’ reviews.</br>
+-As the site owner, I want to impose a character limit on every review, so users have to be concise.</br>
+-As a user, I want to be able to find reviews for games I care about.</br>
+-As an administrator, I want users to be able to delete their posts, but not edit them, so posts cannot be manipulated.</br>
+-As a site user, I don’t want to see content that is irrelevant, offensive, etc..</br>
+-As a site user, I want to track the games I have played.</br>
+-As a site user, I want to upload guides for other users to read.</br>
+-As a site user, I want the site to be easy to view on all devices.</br>
 
 ## DESIGN
 Taking these user stories into account, I wanted a site that was stylish and suitable to all ages to access.
