@@ -53,7 +53,7 @@ Due to the subject of the content, I chose fonts that were easy to read, and had
 [Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans) for the main body.
 
 ### IMAGES
-All my images were sourced from Pexels.
+All my images were sourced from Pexels.</br>
 Minecraft - Photo by Alexander Kovalev: https://www.pexels.com/photo/flat-screen-computer-monitor-3977908/ </br>
 Playstation - Photo by Garrett Morrow: https://www.pexels.com/photo/black-dualshock-4-2885014/ </br>
 Mortal Kombat - Photo by cottonbro studio: https://www.pexels.com/photo/couple-love-sitting-evening-4009604/ </br>
@@ -83,6 +83,8 @@ Using a form, all users can upload a review of a game of their choice with the f
 - Difficulty Rating out of 1-5 stars.
 ### Delete Reviews
 As mentioned in the user stories, users must have the ability to delete any posts they have made. There is also a check in place to ensure users can only delete their own posts. Admins have the ability to delete any post via the admin panel.
+### Site Feedback
+When a user interacts with a feature of the site, they are provided with feedback. This is displayed when logging in and out and attempting to delete posts.
 ### Rating System
 As a way to quantify reviews, I have added three rating systems to each review. These ratings could be used to order the review display. As a future feature, I want to add a vote system similar to Reddit's upvoting or Stack Overflow's forum votes, so users can see which users provide consistently well-received reviews, or which reviews they can trust.
 
@@ -110,4 +112,5 @@ Other features I would like to add in the future include:
 There is a small size issue where the pages have horizontal scroll.
 
 ## SOURCES AND REFERENCES
-I looked up most issues I had during the project on Stack Overflow, as well as W3Schools and GeeksForGeeks. AI was used for a minor bug fix.
+I looked up most issues I had during the project on Stack Overflow, as well as W3Schools and GeeksForGeeks. AI was used for a minor bug fix.</br>
+This project was made for my final submission as part of the Code Institute bootcamp course, and I have used Django features referenced in their 'codestar blog' walkthrough, such as summernote, AllAuth, and crispy forms. The basis for my review feature was adapted from the codestar comment views, as well as the site feedback.
