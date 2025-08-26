@@ -91,6 +91,126 @@ h5 > a {
     font-weight: bold;
 }
 
+#community {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: var(--dark-accent-color);
+    border: 1px solid var(--dark-accent-color);
+    border-radius: 25px;
+    margin:5rem;
+}
+
+#community h1 {
+    font-family: var(--logo-font)
+}
+
+#community ol {
+    list-style-type: none;
+    margin: 1rem;
+}
+
+#sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--dark-accent-color);
+    border: 1px solid var(--dark-accent-color);
+    border-radius: 25px;
+    margin:5rem;
+}
+
+#sign-up div {
+    margin: 2rem;
+}
+
+#sign-up input {
+    border: none;
+    border-bottom: var(--text-highlight-color);
+}
+
+#sign-up a {
+    color: var(--text-highlight-color);
+}
+
+#log-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--dark-accent-color);
+    border: 1px solid var(--dark-accent-color);
+    border-radius: 25px;
+    margin:5rem;
+}
+
+#log-in .row, #log-in button {
+    margin: 2rem;
+}
+
+#log-in a {
+    color: var(--text-highlight-color);
+}
+
+#log-out {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--dark-accent-color);
+    border: 1px solid var(--dark-accent-color);
+    border-radius: 25px;
+    margin:5rem;
+}
+
+#log-out button, #log-out .row {
+    margin: 1rem;
+}
+
+#recent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--dark-accent-color);
+    border: 1px solid var(--dark-accent-color);
+    border-radius: 25px;
+    margin:5rem;
+}
+
+#recent h1 {
+    margin: 0.5rem;
+}
+
+#reviews-div {
+    margin: 1rem;
+    border: 1px solid var(--light-accent-color);
+    border-radius: 25px;
+}
+
+#title {
+    margin: 1rem;
+}
+
+#rating {
+    color: var(--text-highlight-color);
+}
+
+#review-buttons a {
+    color: var(--text-highlight-color);
+}
+
+#review-buttons a:hover {
+    color: var(--white);
+    transition: 0.3s;
+}
+
+#submit-form {
+    background: var(--dark-accent-color) !important;
+    border: 1px solid var(--dark-accent-color);
+    border-radius: 25px;
+    margin: 5rem;
+    padding: 1rem;
+}
+
 /*footer*/
 footer {
     font-family: var(--main-font);
@@ -98,7 +218,7 @@ footer {
     color: var(--text-color);
     padding: 1rem;
     bottom: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
 }
 

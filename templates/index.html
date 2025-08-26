@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 <section id="landing" class="container section">
     <div class="row">
@@ -10,20 +10,20 @@
                         <img src="static/images/minecraft.jpg" class="d-block w-100"
                             alt="A person playing Minecraft on PC.">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Check out <a href="#">PC reviews</a>.</h5>
+                            <h5>Check out <a href="{% url 'reviews' %}">PC reviews</a>.</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="static/images/mortal-kombat.jpg" class="d-block w-100"
                             alt="People playing Mortal Kombat.">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Find your <a href="#">favourite games</a>.</h5>
+                            <h5>Find your favourite games.</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="static/images/playstation.jpg" class="d-block w-100" alt="A Dualshock 4 controller.">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Check out <a href="#">console reviews</a>.</h5>
+                            <h5>Check out <a href="{% url 'reviews' %}">console reviews</a>.</h5>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -54,15 +54,6 @@
                 </br>
                 <a href="{% url 'account_login' %}" class="btn btn-outline-warning btn-lg" role="button">Already have an account?</a>
         </div>
-    </div>
-</section>
-<section id="preview">
-    <div class="row">
-        <h2>Recent Reviews</h2>
-        {% for review in review_list %}
-        <h3>{{ review.game_title }} | {{ review.rating }}</h3>
-        <p>{{ review.content }}</p>
-        {% endfor %}
     </div>
 </section>
 {% endblock %}

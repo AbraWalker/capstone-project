@@ -91,6 +91,40 @@ h5 > a {
     font-weight: bold;
 }
 
+#community {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: var(--dark-accent-color);
+    border: 1px solid var(--dark-accent-color);
+    border-radius: 25px;
+    margin:5rem;
+}
+
+#community h1 {
+    font-family: var(--logo-font)
+}
+
+#community ol {
+    list-style-type: none;
+    margin: 1rem;
+}
+
+#sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--dark-accent-color);
+    border: 1px solid var(--dark-accent-color);
+    border-radius: 25px;
+    margin:5rem;
+}
+
+#sign-up a {
+    color: var(--text-highlight-color);
+}
+
 /*footer*/
 footer {
     font-family: var(--main-font);

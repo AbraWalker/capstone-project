@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section id="recent">
+    <h1>Recent Reviews</h1>
+    <div class="row" id="reviews-div">
+        {% for review in object_list %}
+        <div id="title">
+            <h3> Title: {{review.game_title}}</h3>
+        </div>
+        <div id="rating">
+            <h5>Overall: {{review.overall_rating}}, Difficulty: {{review.difficulty_rating}}, Value: {{review.value_rating}}</h5>
+        </div>
+        <div id="content">
+            <p>{{review.content}}</p>
+        </div>
+        <div id="user-tag">
+            <p>{{review.author}}</p>
+        </div>
+        <div id="review-buttons">
+            <p data-review_id="{{ review.id }}"><a href="{% url 'delete' review.id %}">Delete</a></p>
+            <p data-review_id="{{ review.id }}"><a href="{% url 'edit' review.id %}">Edit</a></p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}
