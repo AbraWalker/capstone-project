@@ -30,6 +30,8 @@ The user stories for this project are further explored in the project's <a href=
 -As an administrator, I want users to be able to delete their posts, but not edit them, so posts cannot be manipulated.
 -As a site user, I don’t want to see content that is irrelevant, offensive, etc..
 -As a site user, I want to track the games I have played.
+-As a site user, I want to upload guides for other users to read.
+-As a site user, I want the site to be easy to view on all devices.
 
 ## DESIGN
 Taking these user stories into account, I wanted a site that was stylish and suitable to all ages to access.
@@ -56,6 +58,7 @@ Minecraft - Photo by Alexander Kovalev: https://www.pexels.com/photo/flat-screen
 Playstation - Photo by Garrett Morrow: https://www.pexels.com/photo/black-dualshock-4-2885014/ </br>
 Mortal Kombat - Photo by cottonbro studio: https://www.pexels.com/photo/couple-love-sitting-evening-4009604/ </br>
 Pokemon - Photo by Anton: https://www.pexels.com/photo/turned-on-iphone-displaying-pokemon-go-charizard-application-243698/ </br>
+Couple - Photo by cottonbro studio: https://www.pexels.com/photo/couple-hands-love-sitting-4009601/ </br>
 
 ## WIREFRAMES
 
@@ -63,28 +66,45 @@ Home Page: </br>
 ![Home Page](wireframes/home.png)
 ![Home Page](wireframes/home2.png)
 
+Using Microsoft Paint for the wireframes, I laid out the different features I wanted the site to have. The navbar and footer are uniform across all pages of the site, as laid out in base.html.
+
 ## FEATURES
 ### Navigation Bar
+Using Bootstrap, the navigation bar is the easiest way to access the pages available on the site. 
 ### User Authentication
+Using AllAuth, users must register and log-in/out to use the site.
 ### Write Reviews
+Using a form, all users can upload a review of a game of their choice with the following metrics:
+- Game Title
+- Character-limited Review (limited to 250 characters).
+- Overall Rating out of 1-5 stars.
+- Value Rating out of 1-5 stars.
+- Difficulty Rating out of 1-5 stars.
 ### Delete Reviews
+As mentioned in the user stories, users must have the ability to delete any posts they have made. There is also a check in place to ensure users can only delete their own posts. Admins have the ability to delete any post via the admin panel.
 ### Rating System
+As a way to quantify reviews, I have added three rating systems to each review. These ratings could be used to order the review display. As a future feature, I want to add a vote system similar to Reddit's upvoting or Stack Overflow's forum votes, so users can see which users provide consistently well-received reviews, or which reviews they can trust.
 
 ## TECH
 
 Languages: Python, HTML, CSS, Javascript </br>
 Frameworks: Bootstrap 5 and Django </br>
 Version Control: Git and GitHub </br>
-Wireframes: Microsoft Paint
+Wireframes: Microsoft Paint </br>
 Site Hosting: Heroku
 
 ## TESTING
-
-HTML Validation
-CSS Validation
+Any errors flagged by HTML and CSS validation have been resolved.
 
 ## IMPROVEMENTS
+There are many features I wanted to add to my site that I was unable to complete. For example, I wanted to add the ability to use the search function in the navigation bar to let users search for certain games, reviews and guides. There is still some guide functionality in my project, however I could not get it to work as intended within the timeframe I had. I have left this code in so I can continue to work on this site in the future. I also had a tracking system mentioned in my user stories that I will add in the future.</br>
+Other features I would like to add in the future include:
+- Report option, so users can flag content for admins.
+- Colourblind/Dark Modes, so users with various impairments or preferences will feel comfortable using the site.
+- Hidden features like hidden JS games, so users can spend more time on the site.
 
 ## KNOWN ISSUES
+There is a small size issue where the pages have horizontal scroll.
 
 ## SOURCES AND REFERENCES
+I looked up most issues I had during the project on Stack Overflow, as well as W3Schools and GeeksForGeeks. AI was used for a minor bug fix.
