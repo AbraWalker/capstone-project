@@ -64,15 +64,16 @@ Couple - Photo by cottonbro studio: https://www.pexels.com/photo/couple-hands-lo
 
 Home Page: </br>
 ![Home Page](wireframes/home.png)
+Review Page: </br>
 ![Home Page](wireframes/home2.png)
 
 Using Microsoft Paint for the wireframes, I laid out the different features I wanted the site to have. The navbar and footer are uniform across all pages of the site, as laid out in base.html.
 
 ## FEATURES
 ### Navigation Bar
-Using Bootstrap, the navigation bar is the easiest way to access the pages available on the site. 
+Using Bootstrap, the navigation bar is the easiest way to access the pages available on the site. When the user logs in, the 'Register' and 'Log-In' links become hidden, and a custom greeting is displayed across all pages. The nav-bar also has a search bar that I wanted users to be able to use to find games, reviews and guides that they were interested in. So as to not have any empty links, all features that I was not able to add to the project have been removed from navigation. When the screensize is smaller, navigation is condensed so everything is still accessible without any awkward scrolling.
 ### User Authentication
-Using AllAuth, users must register and log-in/out to use the site.
+Using AllAuth, users must register and log-in/out to use the site's review posting feature. The registration does not require any email, and usernames must be unique. If a user doesn't want to make an account, they still have the ability to view anything posted on the site but won't be able to interact with it in any way.
 ### Write Reviews
 Using a form, all users can upload a review of a game of their choice with the following metrics:
 - Game Title
@@ -91,10 +92,12 @@ Languages: Python, HTML, CSS, Javascript </br>
 Frameworks: Bootstrap 5 and Django </br>
 Version Control: Git and GitHub </br>
 Wireframes: Microsoft Paint </br>
-Site Hosting: Heroku
+Site Hosting: Heroku </br>
 
+Heroku has been configured to host this project without error. Using .gitignore, sensitive information like files related to the .venv/.env, secret keys and the database have not been featured in the source control. For the testing and building of the site, a virtual environment was used.
 ## TESTING
-Any errors flagged by HTML and CSS validation have been resolved.
+Any errors flagged by HTML and CSS validation have been resolved.</br>
+I have conducted a few tests on the site, including trying to delete another user's reviews, trying to submit a form without all the necessary information, trying to interact with the CRUD elements without being logged in, etc.. 
 
 ## IMPROVEMENTS
 There are many features I wanted to add to my site that I was unable to complete. For example, I wanted to add the ability to use the search function in the navigation bar to let users search for certain games, reviews and guides. There is still some guide functionality in my project, however I could not get it to work as intended within the timeframe I had. I have left this code in so I can continue to work on this site in the future. I also had a tracking system mentioned in my user stories that I will add in the future.</br>
