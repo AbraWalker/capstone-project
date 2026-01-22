@@ -23,23 +23,23 @@ body {
 /*navigation*/
 .navbar {
     font-family: var(--main-font);
-    background-color: var(--dark-accent-color) !important;
+    background-color: var(--text-color) !important;
     font-size: 25px;
 }
 
 .navbar-brand {
     font-family: var(--logo-font);
-    color: var(--text-color);
+    color: var(--dark-accent-color);
     font-size: 35px;
 }
 
 .navbar a {
-    color: var(--text-color);
+    color: var(--dark-accent-color);
     transition: 0.3s;
 }
 
 .navbar a:hover {
-    color: var(--white);
+    color: var(--black);
 }
 
 .navbar-toggler-icon {
@@ -47,17 +47,17 @@ body {
 }
 
 .user-greeting {
-    color: var(--text-color)!important;
+    color: var(--dark-accent-color)!important;
     padding-right: 1rem;
 }
 
 .active {
-    color: var(--text-highlight-color) !important;
+    color: var(--background-color) !important;
     transition: 0.3s;
 }
 
 .active:hover {
-    color: var(--white) !important;
+    color: var(--black) !important;
 }
 
 /*main body/content*/
@@ -215,7 +215,7 @@ h5 > a {
     padding: 1rem;
 }
 
-.alert {
+#msg {
     text-align: center;
     color: var(--white);
 }
