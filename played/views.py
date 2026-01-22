@@ -22,6 +22,8 @@ def submit_list(request):
             review.author = request.user
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Review submitted!')
+        else:
+            messages.add_message(request, messages.ERROR, 'Cannot submit review.')
     review_form = ReviewForm()
     return render(request, "review_submit.html",
         {

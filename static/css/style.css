@@ -42,6 +42,10 @@ body {
     color: var(--white);
 }
 
+#navbar-toggler-icon {
+    color: var(--white) !important;
+}
+
 .user-greeting {
     color: var(--text-color)!important;
     padding-right: 1rem;
@@ -209,6 +213,15 @@ h5 > a {
     border-radius: 25px;
     margin: 5rem;
     padding: 1rem;
+}
+
+#alert {
+    text-align: center;
+    color: var(--white);
+}
+
+#btn-close {
+    color: var(--white) !important;
 }
 
 /*footer*/
