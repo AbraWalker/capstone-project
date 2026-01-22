@@ -42,7 +42,7 @@ body {
     color: var(--white);
 }
 
-#navbar-toggler-icon {
+.navbar-toggler-icon {
     color: var(--white) !important;
 }
 
@@ -215,12 +215,12 @@ h5 > a {
     padding: 1rem;
 }
 
-#alert {
+.alert {
     text-align: center;
     color: var(--white);
 }
 
-#btn-close {
+.btn-close {
     color: var(--white) !important;
 }
 
