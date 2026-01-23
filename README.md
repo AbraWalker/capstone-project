@@ -66,6 +66,8 @@ Home Page: </br>
 ![Home Page](wireframes/home.png)
 Review Page: </br>
 ![Home Page](wireframes/home2.png)
+Mobile Page: </br>
+![Home Page](wireframes/mobile.png)
 
 Using Microsoft Paint for the wireframes, I laid out the different features I wanted the site to have. The navbar and footer are uniform across all pages of the site, as laid out in base.html.
 
@@ -97,9 +99,27 @@ Wireframes: Microsoft Paint </br>
 Site Hosting: Heroku </br>
 
 Heroku has been configured to host this project without error. Using .gitignore, sensitive information like files related to the .venv/.env, secret keys and the database have not been featured in the source control. For the testing and building of the site, a virtual environment was used.
+
+### Heroku Deployment
+
+For a site to be deployed via Heroku, there are a few things that need to be added to a project. </br>
+On Heroku, we need to create a new app with a unique name. In the project itself, we add a procfile and install gunicorn (versions can be found in requirements.txt). In the procfile, add a command to use gunicorn and your projects wsgi file in order to start the webserver. In the project's settings file, add Heroku to the ALLOWED_HOSTS list. </br>
+Back on Heroku, connect the app to your project's repository via the Deploy section, and deploy the main branch manually. All information regarding this deployment will be displayed, including any errors that may come up. </br>
+
+Deployment:</br>
+![Deployment Menu](static/images/deploy.png)
+Connect to repository:</br>
+![Deployment Methods](static/images/link.png)
+Manual Deployment:</br>
+![Manual Deployment](static/images/manual.png)
+Dynos:
+![Dynos](static/images/dynos.png)
+
 ## TESTING
 Any errors flagged by HTML and CSS validation have been resolved.</br>
-I have conducted a few tests on the site, including trying to delete another user's reviews, trying to submit a form without all the necessary information, trying to interact with the CRUD elements without being logged in, etc.. 
+
+I used the <a href="https://validator.w3.org/">Markup Validation Service</a>, and the <a href="https://jigsaw.w3.org/css-validator/">CSS Validation Service</a> to check my work. </br>
+
 
 ## IMPROVEMENTS
 There are many features I wanted to add to my site that I was unable to complete. For example, I wanted to add the ability to use the search function in the navigation bar to let users search for certain games, reviews and guides. There is still some guide functionality in my project, however I could not get it to work as intended within the timeframe I had. I have left this code in so I can continue to work on this site in the future. I also had a tracking system mentioned in my user stories that I will add in the future.</br>
@@ -109,8 +129,20 @@ Other features I would like to add in the future include:
 - Hidden features like hidden JS games, so users can spend more time on the site.
 
 ## KNOWN ISSUES
-There is a small size issue where the pages have horizontal scroll.
+There is a small size issue where the pages have horizontal scroll. </br>
+
+Regarding the user authentication, it was flagged that users could still see authentication options when they are already signed in. This is true to an extent; though the options are removed from the navigation bar depending on whether a user is logged in or not, they are not removed from the homepage itself. This is because there is currently only one homepage template and it will display the same regardless of authentication. However, when a logged-in user presses these buttons, nothing will happen as they are already authenticated. In a future version of this site, these options will be removed from the homepage as they are on the navigation bar. </br>
+
+Another issue is the edit functionality. In my original concept for the site, the reviews themselves were not meant to be editable (similar to other short-form social media sites like Twitter), and the only intended content that was meant to have this function was the guide feature. However, as this was not able to be implemented in time, the edit functionality was added to the review feature. </br>
+
+With the mobile/smaller screen version of the site, the font size remains the same which leads to some readability issues. </br>
+
+There are various readability issues with the colour choices of some elements. Though these colours/elements have been changed in style.css, they are not reflected in the site itself.
+
+### Rebuild Issues
+
+Between my initial submission and my resubmission, the version of Python used in my project became unsupported by the Heroku platform. Because of this, my project is not working as intended, and I cannot make it work within my timeframe. In future commits, I will be updating to a newer Python version.
 
 ## SOURCES AND REFERENCES
-I looked up most issues I had during the project on Stack Overflow, as well as W3Schools and GeeksForGeeks. AI was used for a minor bug fix.</br>
+I looked up most issues I had during the project on Stack Overflow, as well as W3Schools and GeeksForGeeks. AI was used for a minor bug fix within my CSS code, and was not used for anything else.</br>
 This project was made for my final submission as part of the Code Institute bootcamp course, and I have used Django features referenced in their 'codestar blog' walkthrough, such as summernote, AllAuth, and crispy forms. The basis for my review feature was adapted from the codestar comment views, as well as the site feedback.
