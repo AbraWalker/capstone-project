@@ -215,9 +215,10 @@ h5 > a {
     padding: 1rem;
 }
 
-.alert {
-    text-align: center;
-    color: var(--white);
+/* django messages */
+#msg {
+    text-align: center !important;
+    color: var(--white) !important;
 }
 
 .btn-close {
