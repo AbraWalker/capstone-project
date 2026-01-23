@@ -107,12 +107,12 @@ On Heroku, we need to create a new app with a unique name. In the project itself
 Back on Heroku, connect the app to your project's repository via the Deploy section, and deploy the main branch manually. All information regarding this deployment will be displayed, including any errors that may come up. </br>
 
 Deployment:</br>
-![Deployment Menu](static/images/deploy.png)
+![Deployment Menu](static/images/deploy.png)</br>
 Connect to repository:</br>
 ![Deployment Methods](static/images/link.png)
 Manual Deployment:</br>
 ![Manual Deployment](static/images/manual.png)
-Dynos:
+Dynos:</br>
 ![Dynos](static/images/dynos.png)
 
 ## TESTING
