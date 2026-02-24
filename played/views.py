@@ -13,8 +13,8 @@ class ReviewList(generic.ListView):
     paginate_by = 5
 
 def submit_list(request):
-    queryset = Post.objects.all().order_by("created_on")
-    review = get_object_or_404(queryset)
+    #queryset = Post.objects.all().order_by("created_on")
+    #review = get_object_or_404(queryset)
     if request.method == "POST":
         review_form = ReviewForm(data=request.POST)
         if review_form.is_valid():
@@ -22,13 +22,14 @@ def submit_list(request):
             review.author = request.user
             review.save()
             messages.add_message(request, messages.SUCCESS, 'Review submitted!')
+            return HttpResponseRedirect(reverse('reviews'))
         else:
             messages.add_message(request, messages.ERROR, 'Cannot submit review.')
     review_form = ReviewForm()
     return render(request, "review_submit.html",
         {
         "review_form": review_form,
-        "review": review
+        #"review": review
         },
         )
 
