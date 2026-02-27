@@ -93,7 +93,7 @@ As a way to quantify reviews, I have added three rating systems to each review. 
 
 ## TECH
 
-Languages: Python, HTML, CSS, Javascript </br>
+Languages: Python (version 3.12), HTML, CSS, Javascript </br>
 Frameworks: Bootstrap 5 and Django </br>
 Version Control: Git and GitHub </br>
 Wireframes: Microsoft Paint </br>
@@ -106,6 +106,7 @@ Heroku has been configured to host this project without error. Using .gitignore,
 For a site to be deployed via Heroku, there are a few things that need to be added to a project. </br>
 On Heroku, we need to create a new app with a unique name. In the project itself, we add a procfile and install gunicorn (versions can be found in requirements.txt). In the procfile, add a command to use gunicorn and your projects wsgi file in order to start the webserver. In the project's settings file, add Heroku to the ALLOWED_HOSTS list. </br>
 Back on Heroku, connect the app to your project's repository via the Deploy section, and deploy the main branch manually. All information regarding this deployment will be displayed, including any errors that may come up. </br>
+As my previous version of Python (version 3.9) has been depreciated and is no longer compatible with Heroku, it was necessary to update my version to 3.12. When possible, ensure that your Python version will still be supported during development.
 
 Deployment:</br>
 ![Deployment Menu](static/images/deploy.png)</br>
