@@ -19,6 +19,7 @@ The live version of this project can be found <a href="https://played-capstone-p
 - [Testing](#TESTING)
 - [Improvements](#IMPROVEMENTS)
 - [Known Issues](#KNOWN-ISSUES)
+- [Use of AI](#AI)
 - [Sources and References](#SOURCE)
 
 ## USER STORIES
@@ -120,6 +121,10 @@ Any errors flagged by HTML and CSS validation have been resolved.</br>
 
 I used the <a href="https://validator.w3.org/">Markup Validation Service</a>, and the <a href="https://jigsaw.w3.org/css-validator/">CSS Validation Service</a> to check my work. </br>
 
+During the project's development, I manually tested a few features to ensure they worked sufficiently. In Django projects, you need to be able to see error messages clearly, as bugs or issues may not show up in the terminal or problems tab. To manually test, you would go into the settings.py file of your app and set DEBUG to True. In doing this, any errors on your webpages would be displayed in the browser, as well as specific lines where the error appears and potential fixes (depending on the error). Using this debug setting, I was able to fix a variety of bugs during my testing, including an issue where I did not add an endif to one of my conditions resulting in a server error.</br>
+Additionally, I asked for user opinions about what could be done to improve the aesthetic or features of the website. In my feedback, I was told that some features were not intuitive, such as the slug field of the submission form. In future updates, I would like to automate this field so it is not up to the user to create a slug.</br>
+I was also told that the colour scheme looked quite outdated and was maybe too bright for a serious webpage. I will also take this into account for further updates, and my improve readability as a result.</br>
+
 
 ## IMPROVEMENTS
 There are many features I wanted to add to my site that I was unable to complete. For example, I wanted to add the ability to use the search function in the navigation bar to let users search for certain games, reviews and guides. There is still some guide functionality in my project, however I could not get it to work as intended within the timeframe I had. I have left this code in so I can continue to work on this site in the future. I also had a tracking system mentioned in my user stories that I will add in the future.</br>
@@ -129,20 +134,12 @@ Other features I would like to add in the future include:
 - Hidden features like hidden JS games, so users can spend more time on the site.
 
 ## KNOWN ISSUES
-There is a small size issue where the pages have horizontal scroll. </br>
+One of the more prominent issues is the edit functionality. In my original concept for the site, the reviews themselves were not meant to be editable (similar to other short-form social media sites like Twitter), and the only intended content that was meant to have this function was the guide feature. However, as this was not able to be implemented in time, the edit functionality was added to the review feature. </br>
+There is a minor issue regarding the colours used on the webpage where they are updated in the CSS, but this change isn't reflected in the current deployment.
 
-Regarding the user authentication, it was flagged that users could still see authentication options when they are already signed in. This is true to an extent; though the options are removed from the navigation bar depending on whether a user is logged in or not, they are not removed from the homepage itself. This is because there is currently only one homepage template and it will display the same regardless of authentication. However, when a logged-in user presses these buttons, nothing will happen as they are already authenticated. In a future version of this site, these options will be removed from the homepage as they are on the navigation bar. </br>
-
-Another issue is the edit functionality. In my original concept for the site, the reviews themselves were not meant to be editable (similar to other short-form social media sites like Twitter), and the only intended content that was meant to have this function was the guide feature. However, as this was not able to be implemented in time, the edit functionality was added to the review feature. </br>
-
-With the mobile/smaller screen version of the site, the font size remains the same which leads to some readability issues. </br>
-
-There are various readability issues with the colour choices of some elements. Though these colours/elements have been changed in style.css, they are not reflected in the site itself.
-
-### Rebuild Issues
-
-Between my initial submission and my resubmission, the version of Python used in my project became unsupported by the Heroku platform. Because of this, my project is not working as intended, and I cannot make it work within my timeframe. In future commits, I will be updating to a newer Python version.
+## AI
+AI was used rather sparingly in my work, mostly as a bug fixer. Since issues are not always very apparent in front-end development compared to programming in different languages like C#/C++, it can be hard to see what the exact cause of an issue is within HTML or CSS. Tools like AI can be quite good at finding these problems as they are trained on working code and may be able to find an issue faster than a beginner. I did not use it to provide feedback or optimise user experience as I would personally prefer to ask my peers or real users for their feedback first, since they would better represent real-life users. However, as I continue to develop and work on this site, AI could be used for further bug testing and optimisation regarding any loading issues or speed issues as the website gets bigger and more complex.</br>
 
 ## SOURCES AND REFERENCES
-I looked up most issues I had during the project on Stack Overflow, as well as W3Schools and GeeksForGeeks. AI was used for a minor bug fix within my CSS code, and was not used for anything else.</br>
+I looked up most issues I had during the project on Stack Overflow, as well as W3Schools and GeeksForGeeks.</br>
 This project was made for my final submission as part of the Code Institute bootcamp course, and I have used Django features referenced in their 'codestar blog' walkthrough, such as summernote, AllAuth, and crispy forms. The basis for my review feature was adapted from the codestar comment views, as well as the site feedback.
