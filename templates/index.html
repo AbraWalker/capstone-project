@@ -50,9 +50,15 @@
                 <h1 id="logo">PLAYed</h1>
                 <h2>Track your games.</h2>
                 <h2>Clear your backlog.</h2></br>
+                {% if user.is_authenticated %}
+                <a href="{% url 'reviews' %}" class="btn btn-outline-warning btn-lg" role="button">Check out reviews!</a></br>
+                </br>
+                <a href="{% url 'submit' %}" class="btn btn-outline-warning btn-lg" role="button">Submit your own ></a></br>
+                {% else %}
                 <a href="{% url 'account_signup' %}" class="btn btn-outline-warning btn-lg" role="button">Get Started ></a></br>
                 </br>
                 <a href="{% url 'account_login' %}" class="btn btn-outline-warning btn-lg" role="button">Already have an account?</a>
+                {% endif %}
         </div>
     </div>
 </section>
