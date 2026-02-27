@@ -10,7 +10,7 @@
     --background-color: #720026;
     --light-accent-color: #CE4257;
     --text-color: #FF7F51;
-    --text-highlight-color: #FF9B54;
+    --text-highlight-color: #fff154;
     --black: #000000;
     --white: #FFFFFF;
 
@@ -67,7 +67,7 @@ main {
 }
 
 h5 > a {
-    color: var(--text-highlight-color);
+    color: var(--text-highlight-color) !important;
 }
 
 #landing {
@@ -170,6 +170,10 @@ h5 > a {
     margin: 1rem;
 }
 
+.btn {
+    padding: 1rem;
+}
+
 #recent {
     display: flex;
     flex-direction: column;
@@ -216,7 +220,7 @@ h5 > a {
 }
 
 /* django messages */
-#msg {
+.alert {
     text-align: center !important;
     color: var(--white) !important;
 }
@@ -243,4 +247,15 @@ footer a {
 
 footer a:hover {
     color: var(--white);
+}
+
+/*media queries*/
+/* small devices */
+@media screen and (min-width:600px) {
+    .navbar {
+        font-size: 15px;
+    }
+    .navbar-brand {
+        font-size: 20px;
+    }
 }
