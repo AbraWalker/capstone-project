@@ -95,6 +95,10 @@ h5 > a {
     font-weight: bold;
 }
 
+#submission {
+    margin: 15px;
+}
+
 #community {
     display: flex;
     flex-direction: column;
